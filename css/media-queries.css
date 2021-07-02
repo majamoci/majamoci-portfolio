@@ -1,0 +1,41 @@
+@media (max-width:900px){
+    .projects-main-container{
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .profile-main-container .profile-container{
+        display: block;
+    }
+}
+@media (max-width: 600px){
+    header .header-icons-container .icons{
+        margin: 0 auto;
+    }
+    nav .nav-logo-container{
+        margin-left: 20px;
+    }
+    nav .nav-logo-container img{
+        width:200px;
+        margin-top: 25px;
+    }
+    nav .cv-link{
+        margin-right: 30px;
+    }
+    nav .cv-link a{
+        font-size: 1.5rem;
+    }
+    .profile-main-container{
+        padding: 70px 30px;
+    }
+    .profile-container img{
+        width: 100%;
+    }
+    .contact-left img{
+        width: 120px;
+        height: 75px;
+    }
+    .contact-right{
+        font-size: 1.2rem;
+    }
+}

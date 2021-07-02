@@ -1,0 +1,220 @@
+/* Sección global */
+:root{
+    --color-oscuro: #232932 ;
+    --color-celeste: #01ADB5;
+    --color-oscuro-bajo: #3A3F47;
+    --color-gris-bajo: #BFBFBF;
+    --color-blanco: #EEEEEE;
+}
+html{
+    font-size: 62.5%;
+    color: var(--color-oscuro)
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    max-width: 900px;
+    margin: auto;
+}
+/* Header */
+a{
+    text-decoration: none;
+    display: inline;
+}
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+header .header-icons-container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: var(--color-oscuro);
+    position: fixed;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+header .header-icons-container .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+header .icons span{
+    color: var(--color-blanco);
+    font-size: 2.5rem;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+    margin-top: 50px;
+}
+nav .nav-logo-container{
+    margin-left: 50px;
+}
+nav .nav-logo-container img{
+    width: 250px;
+    margin-top: 20px;
+}
+nav .cv-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+nav .cv-link a{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-oscuro);
+    border-bottom: 1px solid var(--color-oscuro);
+}
+
+/* Profile */
+.profile-main-container{
+    padding: 70px 40px;
+    background-color: var(--color-celeste);
+    margin-bottom: 50px;
+}
+.profile-main-container img{
+    width: 320px;
+    /* margin-right: 50px; */
+}
+.profile-main-container .profile-container{
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+}
+.profile-main-projects{
+    padding: 0 50px 40px;
+}
+.profile-main-projects h3{
+    border-bottom: 1px solid var(--color-oscuro-bajo);
+    padding-bottom: 35px;
+    text-align: center;
+    font-size: 2rem;
+}
+.projects-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.project-container{
+    padding: 20px 10px;
+    font-size: 1.4rem;
+}
+.project-container img{
+    width: 100%;
+    border: 1px solid var(--color-gris-bajo);
+    border-radius: 4px;
+    padding: 5px;
+}
+.project-container img:hover{
+    box-shadow: 0 0 2px 1px var(--color-celeste);
+}
+.project-container h4{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.project-annio{
+    text-align: center;
+    width: 100px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color-oscuro);
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.button-container button{
+    width: 100px;
+    height: 50px;
+    border: 2px solid var(--color-celeste);
+    border-radius: 50px;
+    font-size: 1.6rem;
+    background-color: var(--color-celeste);
+}
+
+.button-container button a{
+    color: var(--color-oscuro);
+}
+.button-container button a:hover{
+    color: var(--color-blanco);
+}
+
+/* Sección de contacto */
+.contact-main-container{
+    width: 100%;
+    background-color: var(--color-gris-bajo);
+    text-align: center;
+    padding: 50px 0;
+}
+/* Nueva seccion de contacto */
+.contact-main-container div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-right{
+    width: 49.5%;
+    flex-direction: column;
+    text-align: initial;
+    font-size: 1.6rem;
+}
+.contact-right a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-oscuro);
+}
+.contact-left{
+    width: 49.5%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+.contact-main-container div{
+    display: inline-block;
+    width: 49.5%;
+    height: 100%;
+}
+.contact-main-container div a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-oscuro);
+    border-bottom: 1px solid var(--color-oscuro);
+    padding-bottom: 5px;
+}
+.contact-main-container .contact-right, .contact-left{
+    text-align: initial;
+    margin-top: 85px;
+    margin-left: 10px;
+    font-size: 1.6rem;
+}
+.contact-main-container img{
+    width: 100px;
+} */
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: var(--color-oscuro);
+    border-top: 35px solid var(--color-celeste);
+}
+footer p{
+    color: var(--color-blanco);
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2rem;
+}
