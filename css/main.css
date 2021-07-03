@@ -142,7 +142,7 @@ nav .cv-link a{
     height: 50px;
     border: 2px solid var(--color-celeste);
     border-radius: 50px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     background-color: var(--color-celeste);
 }
 
@@ -160,7 +160,6 @@ nav .cv-link a{
     text-align: center;
     padding: 50px 0;
 }
-/* Nueva seccion de contacto */
 .contact-main-container div{
     display: flex;
     flex-wrap: wrap;
@@ -182,30 +181,6 @@ nav .cv-link a{
     justify-content: center;
     align-items: center;
 }
-
-
-/*
-.contact-main-container div{
-    display: inline-block;
-    width: 49.5%;
-    height: 100%;
-}
-.contact-main-container div a{
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--color-oscuro);
-    border-bottom: 1px solid var(--color-oscuro);
-    padding-bottom: 5px;
-}
-.contact-main-container .contact-right, .contact-left{
-    text-align: initial;
-    margin-top: 85px;
-    margin-left: 10px;
-    font-size: 1.6rem;
-}
-.contact-main-container img{
-    width: 100px;
-} */
 
 footer{
     width: 100%;
