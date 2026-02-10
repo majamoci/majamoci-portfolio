@@ -1,7 +1,15 @@
-FROM nginx:alpine
+FROM node:20-alpine
 
-COPY . /usr/share/nginx/html/
+WORKDIR /app
 
-EXPOSE 80
+# Copiar archivos estáticos
+COPY . .
 
-CMD ["nginx", "-g", "daemon off;"]
+# Instalar servidor estático
+RUN npm install -g serve
+
+# Exponer puerto
+EXPOSE 3000
+
+# Iniciar servidor
+CMD ["serve", "-s", ".", "-l", "3000"]
